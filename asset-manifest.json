@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/learning/static/css/main.8f4cb28d.css",
+    "main.js": "/learning/static/js/main.f894176b.js",
+    "static/media/fon.jpg": "/learning/static/media/fon.ad601eef2411049d65db.jpg",
+    "static/media/async.gif": "/learning/static/media/async.d9e1cf307b8f36c59698.gif",
+    "static/media/dom-links-elements.png": "/learning/static/media/dom-links-elements.4a82b41e3fbb9e87b660.png",
+    "static/media/dom-links.png": "/learning/static/media/dom-links.e9ed859ea7b4b273ab00.png",
+    "static/media/dom.png": "/learning/static/media/dom.d6111b141b623494de50.png",
+    "static/media/context.png": "/learning/static/media/context.8a837114abb0c1d5956e.png",
+    "static/media/sync.png": "/learning/static/media/sync.5f68746f5e51d4bbf297.png",
+    "index.html": "/learning/index.html",
+    "static/media/liink_arrow.svg": "/learning/static/media/liink_arrow.62bdd7e4e64c3ead9cc6.svg",
+    "main.8f4cb28d.css.map": "/learning/static/css/main.8f4cb28d.css.map",
+    "main.f894176b.js.map": "/learning/static/js/main.f894176b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f4cb28d.css",
+    "static/js/main.f894176b.js"
+  ]
+}
