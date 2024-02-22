@@ -1,0 +1,53 @@
+@import "../../styles/variables.scss";
+
+#html-title,
+#html_metaTag,
+#html_sectioning,
+#html_text,
+#html_textSemantics,
+#html_multimedia,
+#html_embeddedContent,
+#html_scripting,
+#html_edits,
+#html_table,
+#html_form,
+#html_interactive {
+  margin-top: 20px;
+
+  td {
+    padding: 0;
+    border: none;
+  }
+
+  h1 {
+    margin: 10px 0px;
+    color: $buttonNeon;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h2,
+  h3,
+  p {
+    padding: 5px;
+    border: 1px solid silver;
+    color: white;
+  }
+}
+
+#html-title {
+  margin-top: 0px;
+}
+
+#menu-btnInfo {
+  border: 1px solid $buttonNeon;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  color: $buttonNeon;
+  font-size: 20px;
+}

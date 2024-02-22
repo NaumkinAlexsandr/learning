@@ -1,0 +1,26 @@
+@import "../styles/variables.scss";
+
+#back-top {
+  background-image: url(../images/liink_arrow.svg);
+  background-size: cover;
+  background-color: rgba(255, 251, 251, 0.6);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  transform: rotateZ(270deg);
+}
+
+#back-top:hover {
+  border: 1px solid $buttonNeon;
+  box-shadow: 0px 0px 10px $buttonNeon;
+}
+
+#back-top a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

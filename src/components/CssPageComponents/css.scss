@@ -1,0 +1,371 @@
+@import "../../styles/variables.scss";
+
+#css_title,
+#css_background,
+#css_font,
+#css_text,
+#css_otherText,
+#css_list,
+#css_size,
+#css_position,
+#css_display,
+#css_flex,
+#css_grid,
+#css_otherElement,
+#css_margin,
+#css_padding,
+#css_border,
+#css_animation,
+#css_transform,
+#css_transition,
+#css_img,
+#css_table,
+#css_pseudoElements,
+#css_pseudoClasses {
+  margin-top: 20px;
+
+  td {
+    padding: 0;
+    border: none;
+  }
+
+  h1 {
+    margin: 5px 0px;
+    color: $buttonNeon;
+    text-align: center;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  h2,
+  h3,
+  p {
+    padding: 5px;
+    border: 1px solid silver;
+    color: white;
+  }
+}
+
+#css_title {
+  margin-top: 0px;
+}
+
+#menu-btnInfo {
+  border: 1px solid $buttonNeon;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  color: $buttonNeon;
+  font-size: 20px;
+}
+
+ul {
+  margin-left: 15px;
+
+  li {
+    margin-left: 15px;
+    list-style-type: circle;
+  }
+}
+
+.text-decoration {
+  text-decoration: underline;
+}
+
+.text-decoration-color {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.text-decoration-line {
+  text-decoration-line: overline underline;
+}
+
+.text-decoration-skip-ink {
+  text-decoration-line: underline;
+  text-decoration-skip-ink: auto;
+}
+
+.text-decoration-style {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+.text-emphasis {
+  text-emphasis: filled double-circle $buttonNeon;
+}
+
+.text-emphasis-color {
+  text-emphasis: filled;
+  text-emphasis-color: $buttonNeon;
+}
+
+.text-emphasis-position {
+  text-emphasis: filled;
+  text-emphasis-position: under right;
+}
+
+.text-emphasis-style {
+  text-emphasis-style: triangle;
+}
+
+.color {
+  color: $buttonNeon;
+}
+
+.transition {
+  width: 100px;
+  height: 130px;
+  margin-top: 15px;
+  background: $buttonNeon;
+  transition-property: width;
+  transition-duration: 5s;
+  transition-delay: 2s;
+
+  &:hover {
+    width: 400px;
+  }
+}
+
+.offsetElement {
+  height: 400px;
+  .offset {
+    width: 50px;
+    height: 50px;
+    background-color: $buttonNeon;
+    offset: path("M 50 50 L 320 50 L 200 320 z") auto;
+    animation: move 3s linear infinite;
+
+    @keyframes move {
+      from {
+        offset-distance: 0%;
+      }
+      to {
+        offset-distance: 100%;
+      }
+    }
+  }
+}
+
+.translate {
+  div {
+    width: 150px;
+    height: 100px;
+    margin: 0 auto;
+
+    h4 {
+      padding: 10px 5px;
+      border: 3px solid $buttonNeon;
+      border-radius: 20px;
+      width: 150px;
+      font-size: 1.2rem;
+      text-align: center;
+      color: $buttonNeon;
+    }
+
+    .translate_text {
+      transition: translate 1s;
+    }
+
+    &:hover .translate_text {
+      translate: 50px -150px;
+    }
+  }
+}
+
+.scale {
+  div {
+    width: 150px;
+    height: 100px;
+    margin: 0 auto;
+
+    h4 {
+      padding: 10px 5px;
+      border: 3px solid $buttonNeon;
+      border-radius: 20px;
+      width: 150px;
+      font-size: 1.2rem;
+      text-align: center;
+      color: $buttonNeon;
+    }
+
+    .scale_text {
+      transition: scale 1s;
+    }
+
+    &:hover .scale_text {
+      scale: 2 1;
+    }
+  }
+}
+
+.rotate {
+  div {
+    width: 150px;
+    height: 100px;
+    margin: 0 auto;
+
+    h4 {
+      padding: 10px 5px;
+      border: 3px solid $buttonNeon;
+      border-radius: 20px;
+      width: 150px;
+      font-size: 1.2rem;
+      text-align: center;
+      color: $buttonNeon;
+    }
+
+    .rotate_text {
+      transition: rotate 1s;
+    }
+
+    &:hover .rotate_text {
+      rotate: 1 -0.5 1 180deg;
+    }
+  }
+}
+
+#backface_visibility {
+  display: flex;
+  flex-direction: row;
+
+  .container {
+    width: 150px;
+    height: 150px;
+    margin: 25px 0 0 55px;
+    border: none;
+
+    .showbf div {
+      backface-visibility: visible;
+    }
+
+    .hidebf div {
+      backface-visibility: hidden;
+    }
+
+    .cube {
+      width: 100%;
+      height: 100%;
+      perspective: 550px;
+      perspective-origin: 150% 150%;
+      transform-style: preserve-3d;
+    }
+
+    .face {
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border: none;
+      line-height: 100px;
+      font-size: 60px;
+      color: white;
+      text-align: center;
+    }
+
+    .front {
+      background: rgba(211, 211, 211, 0.3);
+      transform: translateZ(50px);
+    }
+
+    .back {
+      background: rgba(0, 255, 0, 1);
+      color: black;
+      transform: rotateY(180deg) translateZ(50px);
+    }
+
+    .right {
+      background: rgba(196, 0, 0, 0.7);
+      transform: rotateY(90deg) translateZ(50px);
+    }
+
+    .left {
+      background: rgba(0, 0, 196, 0.7);
+      transform: rotateY(-90deg) translateZ(50px);
+    }
+
+    .top {
+      background: rgba(196, 196, 0, 0.7);
+      transform: rotateX(90deg) translateZ(50px);
+    }
+
+    .bottom {
+      background: rgba(196, 0, 196, 0.7);
+      transform: rotateX(-90deg) translateZ(50px);
+    }
+  }
+}
+
+// ----image----
+
+.circle {
+  .left {
+    float: left;
+    height: 200px;
+    width: 200px;
+    shape-outside: circle();
+    -webkit-shape-outside: circle();
+    clip-path: circle();
+    -webkit-clip-path: circle();
+    background: $buttonNeon;
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+.ellipse {
+  .left {
+    float: left;
+    shape-outside: ellipse();
+    -webkit-shape-outside: ellipse();
+    clip-path: ellipse();
+    -webkit-clip-path: ellipse();
+    width: 150px;
+    height: 300px;
+    background: $buttonNeon;
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+.inset {
+  .left {
+    float: left;
+    shape-outside: inset(75px);
+    -webkit-shape-outside: inset(75px);
+    clip-path: inset(75px);
+    -webkit-clip-path: inset(75px);
+    width: 300px;
+    height: 300px;
+    background: $buttonNeon;
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+.polygon {
+  .left {
+    width: 40%;
+    height: 12ex;
+    background-color: $buttonNeon;
+    float: left;
+    shape-outside: polygon(0 0, 100% 100%, 0 100%);
+    -webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+  }
+
+  p {
+    text-align: left;
+  }
+}

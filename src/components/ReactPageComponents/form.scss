@@ -1,0 +1,34 @@
+@import "../../styles/variables.scss";
+
+.basic-form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    display: flex;
+  }
+
+  label:nth-child(2n) {
+    margin: 10px 0px;
+  }
+
+  input,
+  textarea {
+    margin: 0px 10px;
+    width: 100%;
+  }
+
+  button {
+    width: 70px;
+    height: 30px;
+    background-color: $buttonNeon;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    margin: 10px auto;
+  }
+
+  select {
+    margin-right: 10px;
+  }
+}

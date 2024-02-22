@@ -1,0 +1,87 @@
+@import "../../styles/variables.scss";
+
+#js_title,
+#js_visibility,
+#js_variables,
+#js_operators,
+#js_cycles,
+#js_number,
+#js_string,
+#js_object,
+#js_array,
+#js_function,
+#js_regularExpressions,
+#js_symbol,
+#js_descriptor,
+#js_proto,
+#js_class,
+#js_map,
+#js_set,
+#js_time,
+#js_promise,
+#js_await,
+#js_proxy {
+  margin-top: 20px;
+
+  td {
+    padding: 0;
+    border: none;
+  }
+
+  h1 {
+    margin: 10px 0px;
+    color: $buttonNeon;
+    text-align: center;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  h2,
+  h3,
+  p {
+    padding: 5px;
+    border: 1px solid silver;
+    color: white;
+  }
+}
+
+#js_title {
+  margin-top: 0px;
+}
+
+#menu-btnInfo {
+  border: 1px solid $buttonNeon;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  color: $buttonNeon;
+  font-size: 20px;
+}
+
+#formated-text {
+  p {
+    border: none;
+  }
+}
+
+a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: rgb(27, 110, 218);
+  font-size: 15px;
+}
+
+#rect {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background: $buttonNeon;
+}
+
+img {
+  margin: 5px 15px 5px 5px;
+}

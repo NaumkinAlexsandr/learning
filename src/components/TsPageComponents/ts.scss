@@ -1,0 +1,64 @@
+@import "../../styles/variables.scss";
+
+#ts_title,
+#ts_components,
+#ts_type,
+#ts_classes,
+#ts_access,
+#ts_operators,
+#ts_decorator,
+#ts_generics,
+#ts_typeAssertion,
+#ts_typeGuards,
+#ts_mapped,
+#ts_utilityTypes,
+#ts_solid {
+  margin-top: 20px;
+
+  td {
+    padding: 0;
+    border: none;
+  }
+
+  h1 {
+    margin: 5px 0px;
+    color: $buttonNeon;
+    text-align: center;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  h2,
+  h3,
+  p {
+    padding: 5px;
+    border: 1px solid silver;
+    color: white;
+  }
+}
+
+#ts_title {
+  margin-top: 0px;
+}
+
+#menu-btnInfo {
+  border: 1px solid $buttonNeon;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  color: $buttonNeon;
+  font-size: 20px;
+}
+
+ul {
+  margin-left: 15px;
+
+  li {
+    margin-left: 15px;
+    list-style-type: circle;
+  }
+}

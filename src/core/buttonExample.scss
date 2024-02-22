@@ -1,0 +1,177 @@
+@import "../styles/variables.scss";
+
+@media (max-width: 740px) {
+  #menu-example {
+    border: 1px solid white;
+
+    .menu-example-btn {
+      margin: 5px 0 5px 5px;
+      width: auto;
+      color: $buttonNeon;
+      font-size: 14px;
+    }
+  }
+
+  .table-example {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    .colOne {
+      width: 100%;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      border: none;
+
+      .text,
+      pre {
+        width: 100%;
+        color: white;
+      }
+
+      #formated-text {
+        border: none;
+      }
+
+      .example-btn {
+        width: 60px;
+        height: 30px;
+        background-color: $buttonNeon;
+        color: white;
+        font-size: 14px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .colTwo {
+      width: 100%;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+      .text,
+      pre {
+        width: 100%;
+        color: white;
+      }
+
+      #formated-text {
+        border: none;
+      }
+    }
+
+    .colThree {
+      width: 100%;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+      .text,
+      pre {
+        width: 100%;
+        color: white;
+        border: none;
+      }
+
+      #formated-text {
+        width: 100%;
+        border: none;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 741px) {
+  #menu-example {
+    border: 1px solid white;
+
+    .menu-example-btn {
+      margin: 5px 0 5px 5px;
+      width: auto;
+      color: $buttonNeon;
+      font-size: 14px;
+    }
+  }
+
+  .table-example {
+    margin-top: 10px;
+
+    .colOne {
+      width: 50%;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      border: none;
+
+      .text,
+      pre {
+        width: 100%;
+        color: white;
+      }
+      #formated-text {
+        border: none;
+        color: white;
+      }
+
+      .example-btn {
+        width: 60px;
+        height: 30px;
+        background-color: $buttonNeon;
+        color: white;
+        font-size: 14px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .colTwo {
+      width: 50%;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+      .text,
+      pre {
+        width: 100%;
+        color: white;
+        border: none;
+      }
+
+      #formated-text {
+        width: 100%;
+        border: none;
+        color: white;
+      }
+    }
+
+    .colThree {
+      width: 100%;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+
+      .text,
+      pre {
+        width: 100%;
+        color: white;
+        border: none;
+      }
+
+      #formated-text {
+        width: 100%;
+        border: none;
+        color: white;
+      }
+    }
+  }
+}

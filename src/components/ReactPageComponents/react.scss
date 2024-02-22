@@ -1,0 +1,105 @@
+@import "../../styles/variables.scss";
+
+#react_title,
+#react_examples,
+#react_hooks,
+#react_install {
+  margin-top: 20px;
+
+  td {
+    padding: 0;
+    border: none;
+  }
+
+  h1 {
+    margin: 10px 0px;
+    color: $buttonNeon;
+    text-align: center;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  h2,
+  h3,
+  p {
+    padding: 5px;
+    border: 1px solid silver;
+    color: white;
+  }
+}
+
+#react_title {
+  margin-top: 0px;
+}
+
+#menu-btnInfo {
+  border: 1px solid $buttonNeon;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  color: $buttonNeon;
+  font-size: 20px;
+}
+
+#example-btn {
+  width: 70px;
+  height: 30px;
+  background-color: $buttonNeon;
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+  margin: 5px 5px 5px 0;
+}
+
+.textInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  input {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 3px 0 3px 5px;
+    color: black;
+    border-color: white;
+    font-size: 1rem;
+  }
+
+  button {
+    margin: 5px 0;
+  }
+
+  label {
+    color: white;
+    margin-bottom: 5px;
+  }
+
+  .textInput-h3 {
+    border: none;
+    padding: 3px 0 3px 5px;
+    text-align: left;
+    color: white;
+    width: 100%;
+  }
+}
+
+.props-title {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+.props-output {
+  margin: 5px 0;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.react_images {
+  width: 100%;
+  height: 100%;
+  margin: 5px 0;
+}

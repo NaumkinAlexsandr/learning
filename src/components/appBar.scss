@@ -1,0 +1,36 @@
+@import "../styles/variables.scss";
+
+.header {
+  background-color: rgb(31, 30, 30);
+  display: flex;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .menu-btn {
+    border: 1px solid $buttonNeon;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 42px;
+    height: 40px;
+    background-image: url(../images/menu.png);
+    background-size: cover;
+  }
+
+  .menu-logo {
+    position: relative;
+    h6 {
+      width: 100px;
+      height: 32px;
+    }
+    .menu-logo-logoLink {
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 32px;
+    }
+  }
+}

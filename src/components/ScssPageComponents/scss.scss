@@ -1,0 +1,66 @@
+@import "../../styles/variables.scss";
+
+#scss_title,
+#scss_import,
+#scss_media,
+#scss_extend,
+#scss_at-root,
+#scss_debug,
+#scss_warn,
+#scss_error,
+#scss_if,
+#scss_for,
+#scss_each,
+#scss_while,
+#scss_mixin,
+#scss_argument,
+#scss_content {
+  margin-top: 20px;
+
+  td {
+    padding: 0;
+    border: none;
+  }
+
+  h1 {
+    margin: 5px 0px;
+    color: $buttonNeon;
+    text-align: center;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  h2,
+  h3,
+  p {
+    padding: 5px;
+    border: 1px solid silver;
+    color: white;
+  }
+}
+
+#scss_title {
+  margin-top: 0px;
+}
+
+#menu-btnInfo {
+  border: 1px solid $buttonNeon;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  color: $buttonNeon;
+  font-size: 20px;
+}
+
+ul {
+  margin-left: 15px;
+
+  li {
+    margin-left: 15px;
+    list-style-type: circle;
+  }
+}

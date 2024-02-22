@@ -1,0 +1,68 @@
+@import "../../styles/variables.scss";
+
+#http_title,
+#http_description,
+#http_method,
+#http_code,
+#http_ok,
+#http_redirects,
+#http_clientErrors,
+#http_serverErrors,
+#http_xml,
+#http_async,
+#http_headlines,
+#http_post,
+#http_progress,
+#http_fetch,
+#http_response,
+#http_postFeach,
+#http_formData {
+  margin-top: 20px;
+
+  td {
+    padding: 0;
+    border: none;
+  }
+
+  h1 {
+    margin: 5px 0px;
+    color: $buttonNeon;
+    text-align: center;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  h2,
+  h3,
+  p {
+    padding: 5px;
+    border: 1px solid silver;
+    color: white;
+  }
+}
+
+#title-http {
+  margin-top: 0px;
+}
+
+#menu-btnInfo {
+  border: 1px solid $buttonNeon;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  color: $buttonNeon;
+  font-size: 20px;
+}
+
+ul {
+  margin-left: 15px;
+
+  li {
+    margin-left: 15px;
+    list-style-type: circle;
+  }
+}

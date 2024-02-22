@@ -1,0 +1,42 @@
+@media (max-width: 740px) {
+  .tableTwoCol {
+    flex-direction: column;
+
+    .tableTwoCol_colOne,
+    .tableTwoCol_colTwo {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 741px) {
+  .tableTwoCol {
+    .tableTwoCol_colOne {
+      width: 30%;
+      display: flex;
+      padding: 0;
+
+      h3 {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p {
+        width: 100%;
+      }
+    }
+
+    .tableTwoCol_colTwo {
+      width: 70%;
+      display: flex;
+      padding: 0;
+
+      p {
+        width: 100%;
+      }
+    }
+  }
+}

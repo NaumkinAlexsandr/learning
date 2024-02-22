@@ -1,0 +1,80 @@
+@import "../../styles/variables.scss";
+
+#bom_title,
+#bom_properties,
+#bom_console,
+#bom_method {
+  margin-top: 20px;
+
+  td {
+    padding: 0;
+    border: none;
+  }
+
+  h1 {
+    margin: 10px 0px;
+    color: $buttonNeon;
+    text-align: center;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  h2,
+  h3,
+  p {
+    padding: 5px;
+    border: 1px solid silver;
+    color: white;
+  }
+}
+
+#bom_title {
+  margin-top: 0px;
+}
+
+#menu-btnInfo {
+  border: 1px solid $buttonNeon;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  color: $buttonNeon;
+  font-size: 20px;
+}
+
+.bom-btn {
+  width: auto;
+  height: 30px;
+  padding: 0 5px;
+  background-color: $buttonNeon;
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.bom-btnTwo {
+  width: auto;
+  height: 30px;
+  padding: 0 5px;
+  font-size: 14px;
+  border-radius: 8px;
+  margin: 3px 3px;
+  background-color: $buttonNeon;
+  color: white;
+
+  &:disabled {
+    color: black;
+    background-color: silver;
+  }
+}
+
+.bom-input {
+  height: 28px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 2px solid $buttonNeon;
+}

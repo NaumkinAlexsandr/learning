@@ -1,0 +1,55 @@
+@media (max-width: 740px) {
+  .tableTwoEqualCol {
+    flex-direction: column;
+
+    .tableTwoEqualCol_colOne,
+    .tableTwoEqualCol_colTwo {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 741px) {
+  .tableTwoEqualCol {
+    .tableTwoEqualCol_colOne {
+      width: 50%;
+      display: flex;
+      padding: 0;
+
+      h3 {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p {
+        width: 100%;
+      }
+
+      pre {
+        width: 100%;
+        margin-left: 5px;
+        color: white;
+      }
+    }
+
+    .tableTwoEqualCol_colTwo {
+      width: 50%;
+      display: flex;
+      padding: 0;
+
+      p,
+      h3 {
+        width: 100%;
+      }
+
+      pre {
+        width: 100%;
+        margin-left: 5px;
+        color: white;
+      }
+    }
+  }
+}
